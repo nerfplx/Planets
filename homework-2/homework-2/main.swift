@@ -26,7 +26,8 @@ class ThreadSafeArray <T> {
         semaphore.signal()
     }
     
-    subscript(index: Int) -> T {
+    subscript(index: Int) -> T? {
+        guard index < safeArray.count - 1 else {return nil}
         semaphore.wait()
         let sub = safeArray[index]
         semaphore.signal()
