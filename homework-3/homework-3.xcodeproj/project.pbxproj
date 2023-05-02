@@ -17,7 +17,6 @@
 		A81B614C29FE6F7000292F81 /* SkillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B614B29FE6F7000292F81 /* SkillsModel.swift */; };
 		A81B614F29FE6F9E00292F81 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B614E29FE6F9E00292F81 /* HobbyViewController.swift */; };
 		A81B615129FE6FAD00292F81 /* HobbyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B615029FE6FAD00292F81 /* HobbyModel.swift */; };
-		A81B615429FE6FD100292F81 /* AboutMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81B615329FE6FD100292F81 /* AboutMeModel.swift */; };
 		A81B615829FE705C00292F81 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A81B615729FE705C00292F81 /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		A81B614B29FE6F7000292F81 /* SkillsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsModel.swift; sourceTree = "<group>"; };
 		A81B614E29FE6F9E00292F81 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		A81B615029FE6FAD00292F81 /* HobbyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyModel.swift; sourceTree = "<group>"; };
-		A81B615329FE6FD100292F81 /* AboutMeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 		A81B615529FE6FED00292F81 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				A81B615329FE6FD100292F81 /* AboutMeModel.swift */,
 				A81B613929FE6ED300292F81 /* AboutMeViewController.swift */,
 			);
 			path = AboutMe;
@@ -188,7 +185,6 @@
 				A81B613A29FE6ED300292F81 /* AboutMeViewController.swift in Sources */,
 				A81B613629FE6ED300292F81 /* AppDelegate.swift in Sources */,
 				A81B614A29FE6F6100292F81 /* SkillsViewController.swift in Sources */,
-				A81B615429FE6FD100292F81 /* AboutMeModel.swift in Sources */,
 				A81B614F29FE6F9E00292F81 /* HobbyViewController.swift in Sources */,
 				A81B614C29FE6F7000292F81 /* SkillsModel.swift in Sources */,
 				A81B613829FE6ED300292F81 /* SceneDelegate.swift in Sources */,
