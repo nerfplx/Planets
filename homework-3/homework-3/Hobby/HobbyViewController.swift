@@ -8,7 +8,7 @@ class HobbyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupHobbyData()
+        self.setupHobbyData(HobbyModel())
         self.setupHobbyView()
     }
 }
@@ -20,9 +20,9 @@ private extension HobbyViewController {
         static let horisontalLeading = 30
     }
     
-    func setupHobbyData() {
-        self.headerLabel.text = hobbyModel[0]
-        self.hobbyLabel.text = hobbyModel[1]
+    func setupHobbyData(_ viewModel: HobbyModel) {
+        self.headerLabel.text = viewModel.header
+        self.hobbyLabel.text = viewModel.hobbies.joined(separator: "\n-")
     }
     
     func setupHobbyView() {

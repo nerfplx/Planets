@@ -9,7 +9,7 @@ class SkillsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupSkillsData()
+        self.setupSkillsData(SkillsModel())
         self.setupSkillsView()
     }
 }
@@ -22,10 +22,10 @@ private extension SkillsViewController {
         static let horisontalLeading = 30
     }
     
-    func setupSkillsData() {
-        self.headerLabel.text = skillModel[0]
-        self.skillsLabel.text = skillModel[1]
-        self.experienceLabel.text = skillModel[2]
+    func setupSkillsData(_ viewModel: SkillsModel) {
+        self.headerLabel.text = viewModel.header
+        self.skillsLabel.text = viewModel.skills.joined(separator: "\n-")
+        self.experienceLabel.text = viewModel.experience
     }
     
     func setupSkillsView() {

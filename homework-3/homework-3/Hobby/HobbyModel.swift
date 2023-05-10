@@ -2,5 +2,18 @@ import Foundation
 
 
 
-let hobbyModel = ["Увлечения",
-                  "-Волейбол \n-Настольный теннис \n-Сноубординг"]
+struct HobbyModel {
+    let header: String
+    let hobbies: [String]
+}
+
+extension HobbyModel {
+    init() {
+        self.header = "Увлечения"
+        self.hobbies = ["-Волейбол",
+                      "Настольный теннис",
+                      "Сноубординг"]
+    }
+}
+
+
