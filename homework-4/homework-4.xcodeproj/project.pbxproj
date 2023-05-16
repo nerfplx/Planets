@@ -87,8 +87,8 @@
 		A8B8FD782A02A926003292D4 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				A8B8FD712A019AC5003292D4 /* CollectionCellModel.swift */,
 				A8B8FD6A2A019444003292D4 /* CollectionViewController.swift */,
+				A8B8FD712A019AC5003292D4 /* CollectionCellModel.swift */,
 				A8B8FD6F2A019774003292D4 /* CollectionViewCell.swift */,
 			);
 			path = Collection;

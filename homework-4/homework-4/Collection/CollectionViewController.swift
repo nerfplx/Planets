@@ -34,7 +34,7 @@ private extension CollectionViewController {
     }
     
     func configureNavigationBarItem () {
-        self.navigationController?.navigationBar.topItem?.title = navigationBarItem
+        self.title = navigationBarItem
         
     }
     

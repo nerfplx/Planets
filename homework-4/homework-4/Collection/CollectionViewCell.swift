@@ -8,7 +8,7 @@ class CollectionViewCell: UICollectionViewCell {
         didSet {
             nameLabel.text = cell?.name ?? ""
             if let image = cell?.image {
-                imageView.image = UIImage(named: image)
+                imageView.image = image
             }
         }
     }

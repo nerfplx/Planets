@@ -4,7 +4,6 @@ import SnapKit
 class DetailViewController: UIViewController {
     
     private let buttonText = "Detail"
-    var cell: CollectionCellModel?
     
     private var nameLabel = UILabel()
     private var imageView = UIImageView()
@@ -21,6 +20,8 @@ class DetailViewController: UIViewController {
         static let topButton = 30
         static let bottomImage = -100
     }
+    
+    var cell: CollectionCellModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,7 @@ private extension DetailViewController {
     func setupCell(_ viewModel: CollectionCellModel) {
         self.nameLabel.text = cell?.name
         if let image = cell?.image {
-            self.imageView.image = UIImage(named: image)
+            self.imageView.image = image
         }
     }
     
