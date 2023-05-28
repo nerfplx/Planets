@@ -1,7 +1,7 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-
+    
     private let imageView = UIImageView()
     private let nameLabel = UILabel()
     private let cellView = UIView()

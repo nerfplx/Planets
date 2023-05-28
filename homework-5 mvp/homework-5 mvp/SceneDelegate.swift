@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  homework-5 mvp
-//
-//  Created by Александр Платонов on 21.05.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -25,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navigationController.navigationBar.topItem?.title = navigationBarItem
         navigationController.navigationBar.tintColor = .white
         self.window?.makeKeyAndVisible()
-        
     }
 }
 

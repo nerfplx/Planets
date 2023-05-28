@@ -1,7 +1,5 @@
 import Foundation
 
-
-
 protocol DetailPresenterProtocol: AnyObject {
     func viewDidLoad()
 }

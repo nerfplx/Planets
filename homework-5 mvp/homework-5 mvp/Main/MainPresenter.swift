@@ -9,6 +9,7 @@ protocol MainPresenterProtocol: AnyObject {
 class MainPresenter: MainPresenterProtocol {
     weak var view: MainViewProtocol?
     private let model: ItemsModelProtocol
+    
     private(set) var items: [Item] = []
     
     init(model: ItemsModelProtocol) {
@@ -26,10 +27,10 @@ extension MainPresenter {
     
     func didSelectItem(at indexPath: IndexPath) {
         let selectedItem = items[indexPath.row]
-            let detailPresenter = DetailPresenter(item: selectedItem)
-            let detailViewController = DetailViewController(presenter: detailPresenter)
-            detailPresenter.view = detailViewController
-
+        let detailPresenter = DetailPresenter(item: selectedItem)
+        let detailViewController = DetailViewController(presenter: detailPresenter)
+        detailPresenter.view = detailViewController
+        
         view?.navigateToDetailViewController(detailViewController)
     }
 }
